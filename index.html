@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="min-h-screen bg-gradient flex items-center justify-center p-4">
+    <div class="login-container">
+      <div class="login-box">
+        <div class="login-content">
+          <h2 class="title">Welcome Back</h2>
+          <form id="loginForm" class="space-y-6">
+            <div class="input-group">
+              <label for="email" class="label">Email</label>
+              <input 
+                id="email" 
+                type="email" 
+                placeholder="Enter your email" 
+                class="input"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <label for="password" class="label">Password</label>
+              <input 
+                id="password" 
+                type="password" 
+                placeholder="Enter your password" 
+                class="input"
+                required
+              />
+            </div>
+            <div class="flex-row">
+              <div class="checkbox-group">
+                <input type="checkbox" id="remember" class="checkbox"/>
+                <label for="remember" class="checkbox-label">Remember me</label>
+              </div>
+              <a href="#" class="link">Forgot password?</a>
+            </div>
+            <button type="submit" class="submit-btn">Log In</button>
+          </form>
+          <div class="social-login">
+            <div class="divider">
+              <div class="divider-line"></div>
+              <span class="divider-text">Or continue with</span>
+            </div>
+            <div class="social-buttons">
+              <button class="social-btn google-btn">Google</button>
+              <button class="social-btn github-btn">GitHub</button>
+              <button class="social-btn twitter-btn">Twitter</button>
+            </div>
+          </div>
+        </div>
+        <div class="signup">
+          <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
